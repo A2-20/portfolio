@@ -133,19 +133,19 @@ header::before {
 }
 
 @keyframes avatarPulse {
-    0%, 100% { 
+    0%, 100% {
         transform: scale(1) rotate(0deg);
         box-shadow: 0 15px 35px rgba(249, 115, 22, 0.3);
     }
-    25% { 
+    25% {
         transform: scale(1.05) rotate(2deg);
         box-shadow: 0 18px 40px rgba(249, 115, 22, 0.4);
     }
-    50% { 
+    50% {
         transform: scale(1.02) rotate(-1deg);
         box-shadow: 0 20px 45px rgba(20, 184, 166, 0.3);
     }
-    75% { 
+    75% {
         transform: scale(1.03) rotate(1deg);
         box-shadow: 0 18px 40px rgba(139, 92, 246, 0.3);
     }
@@ -801,11 +801,11 @@ header::before {
     .header-content h1 {
         font-size: 40px;
     }
-    
+
     .header-content .lead {
         padding-left: 0;
     }
-    
+
     .header-content .lead::before {
         display: none;
     }
@@ -819,7 +819,7 @@ header::before {
     body {
         padding: 20px;
     }
-    
+
     .container {
         padding: 10px;
     }
@@ -835,11 +835,11 @@ header::before {
     .project-content {
         padding: 25px;
     }
-    
+
     .project-image-container {
         height: 180px;
     }
-    
+
     .header-content h1 {
         font-size: 32px;
     }
@@ -853,6 +853,23 @@ header::before {
         height: 130px;
         font-size: 48px;
     }
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--gray);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--gradient);
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary);
 }
 
 ::-webkit-scrollbar {
